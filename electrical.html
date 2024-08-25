@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500&family=Hind+Siliguri:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>COLLEGE WEBSITE</title>
+</head>
+
+<body>
+    <section class="depts">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+    </section>
+    <section class="electrical" id="electrical">
+        <h1>WELCOME TO ELECTRICAL ENGINEERING DEPARTMENT</h1>
+        <p>The Department of Electrical Engineering is one of the oldest departments of the National Institute of
+            Technology, Warangal (NITW). Established as one of the major departments of the Institute, since its
+            inception in 1959, the Department of Electrical Engineering has been actively engaged in teaching and
+            research in diverse fields of Electrical Engineering. With excellent faculty, the Department of Electrical
+            Engineering offers Under Graduate (B.Tech) and Post Graduate (M.Tech) in Power Electronics & Drives and
+            Power Systems and research (Ph.D) programmes.
+        </p>
+        <p>
+            The Department is strong with all faculty members holding PhD degrees and expertise in various fields. The
+            broad areas of expertise include State Estimation and Real Time Control of Power Systems, Applications of
+            ANN and Fuzzy Logic in Power Systems, Power System Deregulation, Power System Transients, Power Quality,
+            EMTP applications in Power Systems, Relay Coordination, Application of Power Electronics to Power Quality
+            Improvement and Industrial Drives, Hybrid Energy Storage Systems, DSP controlled Drives, Simulation of Power
+            Electronic Converters and Drives Systems and Control of Special Machines
+        </p>
+        <p>
+            The Department has strong Industry interaction and has been involved in constantly handling various
+            consultancy projects for various Industries and Government of Telangana and Andhra Pradesh. Department has
+            an MOU with Central Power Research Institute (CPRI), Defence Research and Development Organization (DRDO) to
+            carry out the collaborative projects.</p>
+        <div class="VM">
+            <h3>Vision</h3>
+            <p>To excel in education, research and technological services in electrical engineering in tune with
+                societal aspirations.</p>
+
+            <h3>Mission</h3>
+            <p>1. Impart quality education to produce globally competent electrical engineers capable of extending
+                technological services.
+            </p>
+            <p> 2. Engage in research & development in cutting edge and sustainable technologies.</p>
+            <p>3. Nurture scientific temperament, professional ethics and industrial collaboration.</p>
+        </div>
+        <div class="HOD">
+            <span>
+                <h3>Head of the Department</h3>
+                <p style="color: rgb(192, 63, 63); font-size: 20px;">Prof. B. L. Narasimharaju</p>
+                <p>eee_hod@nitw.ac.in</p>
+                <p> 08702462247</p>
+            </span>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <section class="foot">
+        <div class="foot-row">
+            <div class="foot-col">
+                <h2>NIT Warangal</h2>
+                <p>
+                    National Institute of Technology,
+                    <br>
+                    Warangal - 506004,
+                    <br>
+                    TS, INDIA
+                    <br>
+                    Phone: +91-870-2459191
+                    <br>
+                    FAX : +91-870-2459547
+                </p>
+
+            </div>
+            <div class="foot-col">
+                <h3>Our Campus</h3>
+                <ul>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Guest House (GH)</a></li>
+                    <li><a href="#">Health Care Centre (HCC)</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Virtual Tour</a></li>
+
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">TEQIP</a></li>
+                    <li><a href="#">Career Development Centre (CDC)</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">IRIS Portal</a></li>
+                    <li><a href="#">Telephone Directory</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h3>General Links</h3>
+                <ul>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">REO Complaints</a></li>
+                    <li><a href="#">Internal Complaints</a></li>
+                    <li><a href="#">National Career Service Portal</a></li>
+                    <li><a href="#">Tenders and Quotations</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="foot-end">
+        <div class="cright">
+            <div class="cright-elements">
+                <h3>Copyright All Rights Reserved 2023, NITW</h3>
+            </div>
+            <div class="cright-elements" id="cright-fa">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>

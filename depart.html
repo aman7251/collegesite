@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500&family=Hind+Siliguri:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>COLLEGE WEBSITE</title>
+</head>
+
+<body>
+    <section class="depts">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+    </section>
+    <section class="dept">
+        <h1>Deparments</h1>
+        <div class="dept-row">
+            <div class="dep-col">
+                <img src="img/symbols/computer.png" alt="">
+                <div>
+                    <h3><a href="CSE.html" style="text-decoration: none; color: rgb(0, 0, 0);">Computer
+                            Science</a></h3>
+                </div>
+            </div>
+            <div class="dep-col">
+                <img src="img/symbols/electrical.jpg" alt="">
+                <div>
+                    <h3><a href="electrical.html" style="text-decoration: none; color: rgb(0, 0, 0);">Electrical</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="dep-col">
+                <img src="img/symbols/ECE.jpg" alt="">
+                <div>
+                    <h3><a href="ECE.html" style="text-decoration: none; color: rgb(0, 0, 0);">ECE</a></h3>
+                </div>
+            </div>
+            <div class="dep-col">
+                <img src="img/symbols/mechanical.jpg" alt="">
+                <div>
+                    <h3><a href="ECE.html" style="text-decoration: none; color: rgb(0, 0, 0);">Mechanical</a></h3>
+                </div>
+            </div>
+            <div class="dep-col">
+                <img src="img/symbols/civil-transformed (1).png" alt="">
+                <div>
+                    <h3><a href="ECE.html" style="text-decoration: none; color: rgb(0, 0, 0);">Civil</a></h3>
+                </div>
+            </div>
+            <div class="dep-col">
+                <img src="img/symbols/meta.jpg" alt="">
+                <div>
+                    <h3><a href="ECE.html" style="text-decoration: none; color: rgb(0, 0, 0);">Metallurgical</a></h3>
+                </div>
+            </div>
+            <div class="dep-col">
+                <img src="img/symbols/chemical.jpg" alt="">
+                <div>
+                    <h3><a href="ECE.html" style="text-decoration: none; color: rgb(0, 0, 0);">Chemical</a></h3>
+                </div>
+            </div>
+            <div class="dep-col">
+                <img src="img/symbols/biotech.png" alt="">
+                <div>
+                    <h3><a href="ECE.html" style="text-decoration: none; color: rgb(0, 0, 0);">Biotechnology</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <section class="foot">
+        <div class="foot-row">
+            <div class="foot-col">
+                <h2>NIT Warangal</h2>
+                <p>
+                    National Institute of Technology,
+                    <br>
+                    Warangal - 506004,
+                    <br>
+                    TS, INDIA
+                    <br>
+                    Phone: +91-870-2459191
+                    <br>
+                    FAX : +91-870-2459547
+                </p>
+
+            </div>
+            <div class="foot-col">
+                <h3>Our Campus</h3>
+                <ul>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Guest House (GH)</a></li>
+                    <li><a href="#">Health Care Centre (HCC)</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Virtual Tour</a></li>
+
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">TEQIP</a></li>
+                    <li><a href="#">Career Development Centre (CDC)</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">IRIS Portal</a></li>
+                    <li><a href="#">Telephone Directory</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h3>General Links</h3>
+                <ul>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">REO Complaints</a></li>
+                    <li><a href="#">Internal Complaints</a></li>
+                    <li><a href="#">National Career Service Portal</a></li>
+                    <li><a href="#">Tenders and Quotations</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="foot-end">
+        <div class="cright">
+            <div class="cright-elements">
+                <h3>Copyright All Rights Reserved 2023, NITW</h3>
+            </div>
+            <div class="cright-elements" id="cright-fa">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>

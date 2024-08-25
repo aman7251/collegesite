@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500&family=Hind+Siliguri:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>COLLEGE WEBSITE</title>
+</head>
+
+<body>
+    <section class="depts">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+    </section>
+    <section class="electrical" id="ECE">
+        <h1> Department of Electronics and Communication Engineering</h1>
+        <p>National Institute of Technology Warangal was established in 1959, and the department of Electronics and
+            Communication Engineering has been one of the key departments of the institute since its inception in the
+            year
+            1971. The department has expanded steadily over the last few decades and is now recognized as one of the
+            leading
+            academic and research centres in India. The department has strong liaisons with academics and industry
+            across
+            the globe. The department also provides support to R&D organizations. The faculty is actively engaged in
+            providing solutions to industry problems as consultants. The academic programs of the department are rated
+            among
+            the top in the country. The graduating students are well placed in leading academic institutes, research
+            organizations and industries.
+        </p>
+        <p>The Department of Electronics and Communication Engineering is one of the country’s larger ECE departments
+            among
+            all NITs in India and one of the largest departments of the National Institute of Technology, Warangal
+            (NITW).
+            The ECE Department at NITW has been an international reputation of excellence in teaching, research and
+            service.
+            With excellent laboratory facilities and dedicated faculty, the department of ECE offers broad range of
+            programs
+            that include undergraduate(B.Tech) and post graduate (M.Tech) in Electronics Instrumentation, VLSI System
+            design, Communication Systems and research (Ph.D) programs. Some of the recent sponsored project undertaken
+            by
+            the department includes Radar Emitter Identification using Neural Networks sponsored by DLRL, Hyderabad and
+            Special Manpower Development in VLSI sponsored by MIT-Govt. of India.
+        </p>
+        <div class="HOD">
+            <span>
+                <h3>Head of the Department</h3>
+                <p style="color: rgb(192, 63, 63); font-size: 20px;">Prof. D. Vakula</p>
+                <p>ece_hod@nitw.ac.in</p>
+                <p>08702462400</p>
+            </span>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <section class="foot">
+        <div class="foot-row">
+            <div class="foot-col">
+                <h2>NIT Warangal</h2>
+                <p>
+                    National Institute of Technology,
+                    <br>
+                    Warangal - 506004,
+                    <br>
+                    TS, INDIA
+                    <br>
+                    Phone: +91-870-2459191
+                    <br>
+                    FAX : +91-870-2459547
+                </p>
+
+            </div>
+            <div class="foot-col">
+                <h3>Our Campus</h3>
+                <ul>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Guest House (GH)</a></li>
+                    <li><a href="#">Health Care Centre (HCC)</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Virtual Tour</a></li>
+
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">TEQIP</a></li>
+                    <li><a href="#">Career Development Centre (CDC)</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">IRIS Portal</a></li>
+                    <li><a href="#">Telephone Directory</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h3>General Links</h3>
+                <ul>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">REO Complaints</a></li>
+                    <li><a href="#">Internal Complaints</a></li>
+                    <li><a href="#">National Career Service Portal</a></li>
+                    <li><a href="#">Tenders and Quotations</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="foot-end">
+        <div class="cright">
+            <div class="cright-elements">
+                <h3>Copyright All Rights Reserved 2023, NITW</h3>
+            </div>
+            <div class="cright-elements" id="cright-fa">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>
